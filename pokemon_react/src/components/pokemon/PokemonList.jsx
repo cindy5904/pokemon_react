@@ -29,22 +29,31 @@ const PokemonList = () => {
     return ( 
         <>
         <div className="container-card">
-            
+           
         {currentPokemons.map((pokemon, index) => (
             
     <Link key={pokemon.id} to={`/details/${pokemon.id}`} className="pokemon-link">
-      <div className="pokemon-card">
+      <div className="card-list" >
+            <div className="card-contour-list" >
+                <div className="pokemon-card">
         <div className="img-poke">
-          <img className="img" src={pokemon.sprites?.other?.dream_world?.front_default} alt={`Pokemon ${pokemon.name}`} />
+            <div className="contour-img-list">
+            <img className="img" src={pokemon.sprites?.other?.dream_world?.front_default} alt={`Pokemon ${pokemon.name}`} />
+
+            </div>
         </div>
         <div className="text-poke">
           <p className="pokemon-id">#{startIndex + index + 1}</p>
           <p className="pokemon-name">{pokemon.name}</p>
         </div>
       </div>
+      </div>
+        </div>
     </Link>
+
   ))}
-        
+    
+            
       </div>
 
       
