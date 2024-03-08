@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'PokemonFont';
+  src: url('../public/font/Pokemon\ Hollow.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #333;
+  margin: 0;
+  
+}
+
+.navbar {
+  background-color: #292929;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.section-gauche {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #8ac6ff; 
+}
+.section-droite {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pokedex-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f7f3f3;
+}
+h1 {
+  text-align: center;
+}
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pokemon-card {
+  background-color: #ffc04d;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 320px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.img-poke img {
+  background-color: #eae4e4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.img {
+  width: 100%;
+  height: 180px;
+}
+.text-poke {
+  margin-top: 10px;
+}
+
+.pokemon-id {
+  font-weight: bold;
+}
+
+.pokemon-name {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'PokemonFont';
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #555;
+}
+
+.pagination button.active {
+  background-color: #f7f3f3;
+}
+
+.pagination .separator {
+  margin: 0 8px;
+  color: #f9f7f7;
+  font-size: 16px;
+}
+.current-page {
+  color: #eae4e4;
+}
+.container-card-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.card-detail {
+  background-color: #626364;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 10px;
+  width: 330px;
+  height: 650px;
+  text-align: center;
+}
+.card-contour {
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #2c3e50, #3498db);
+  height: 630px;
+  padding: 10px;
+}
+.card-detail p {
+  color:#eae4e4;
+}
+.top-card-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-droite {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.energy {
+  width: 20px;
+  height: 20px;
+}
+.cont-img {
+  background-color: #393737;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 170px;
+  margin: auto;
+  padding-top: 5px;
+  border-radius: 8px;
+}
+.img-centre {
+  border-radius: 8px;
+  width: 290px;
+  margin: auto;
+  height: 165px;
+  background: linear-gradient(to right, #3498db, #ffffff, #2c3e50);
+
+  /* background: linear-gradient(to bottom, #2c3e50, #3498db); */
+}
+.img-detail {
+  width: 120px;
+  margin: auto;
+  padding-top: 7px;
+}
+
+.name-detail {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff; 
+  font-size: 16px; 
+  font-weight: bold; 
+}
+
+.pv {
+  font-size: 9px;
+  margin-right: 5px;
+}
+
+.hp {
+  font-weight: bold;
+}
+
+.taille-poid-detail {
+  display: flex;
+  justify-content: space-around;
+}
+.taille p, .poid p{
+  margin:6px;
+  
+}
+.taille, .poid {
+  padding-top: 10px;
+}
+.text-tp {
+  font-size: 10px;
+}
+.type-abilities {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+.stat-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+.text-bar {
+  font-size: 12px;
+  text-align: left;
+}
+
+.hp-bar {
+  background-color: rgb(152, 216, 152);
+}
+
+.atk-bar {
+  background-color: rgb(72, 47, 47);
+}
+
+.exp-bar {
+  background-color: #8ac6ff;
+}
+
+.spd-bar {
+  background-color: #dbbd84;
+}
+
+.def-bar {
+  background-color: pink;
+}
+
+
+
+
+
