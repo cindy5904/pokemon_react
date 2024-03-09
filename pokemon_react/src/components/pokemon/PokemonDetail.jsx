@@ -116,11 +116,11 @@ const PokemonDetail = () => {
     <div>
         <Navbar/>
       <div className="container-card-detail">
-        <div className="card-detail">
+        <div className={`${classe}-card-detail`}>
             <div className={`${classe}-card-contour`}>
             <div className="top-card-detail">
 
-                <p className='name-detail'>{selectedPokemon.name}</p>
+                <p className={`${classe}-name-detail`}>{selectedPokemon.name}</p>
                <div className="detail-droite">
                <p><span className='pv'>PV:</span><span className='hp'>{selectedPokemon.hp}</span></p>
                 {pokemonTypes.map((typeObj, index) => (
@@ -134,20 +134,25 @@ const PokemonDetail = () => {
                </div>
                 
                 </div>
-               <div className="cont-img">
-                <div className="img-centre">
+               <div className={`${classe}-cont-img`}>
+                <div className={`${classe}-img-centre`}>
                     <img className="img-detail" src={selectedPokemon.sprites?.other?.dream_world?.front_default} alt={`Pokemon ${selectedPokemon.name}`} />
                     </div>
                </div>
                <div className="type-abilities">
-               <div className="type">
-                    <p className='text-type'>{selectedPokemon.typesname.join(', ')}</p>
-               </div>
-               <div className="abilities">
-                 <p className="text-abilities">{selectedPokemon.abilitiesname.join(', ')}</p>
-               </div>
-               </div>
-               <div className="taille-poid-detail">
+                    <div className="gauche-info">
+                            <div className="type">
+                    {pokemonTypes.map((typeObj, index) => (
+                            <img
+                                key={index}
+                                src={getLogoPath(typeObj)}
+                                alt={typeObj.type.name}
+                                className='energy'
+                            />
+                            ))}
+                            <p className={`${classe}-text-type`}>{selectedPokemon.typesname.join(', ')}</p>
+                    </div>
+                    <div className="taille-poid-detail">
                     <div className="taille">
                         <p className='text-tp'>Height:</p>
                         <p>{selectedPokemon.height}</p>
@@ -158,27 +163,42 @@ const PokemonDetail = () => {
                     </div>
                     
                </div>
+                    
+                    </div>
+               <div className={`${classe}-abilities`}>
+                    <p className={`${classe}-text-abilities`}>Abilities:</p>
+                    <hr />
+                    <ul>
+                        {selectedPokemon.abilitiesname.map((ability, index) => (
+                        <li key={index}>{ability}</li>
+                        ))}
+                    </ul>
+               </div>
+               </div>
+               
+               <div className="groupe">
                <div>
                 <p className='text-bar'>HP: </p>
-                <div className="stat-bar hp-bar" style={{ width: `${hpPercentage}%`}}></div>
+                <div className="stat-bar" id={`${classe}-hp-bar`} style={{ width: `${hpPercentage}%`}}></div>
               </div>
               
               <div>
                 <p className='text-bar'>ATK: </p>
-                <div className="stat-bar atk-bar" style={{ width: `${atkPercentage}%` }}></div>
+                <div className="stat-bar" id={`${classe}-atk-bar`} style={{ width: `${atkPercentage}%` }}></div>
               </div>
               <div>
                 <p className='text-bar'>DEF: </p>
-                <div className="stat-bar def-bar" style={{ width: `${defPercentage}%` }}></div>
+                <div className="stat-bar" id={`${classe}-def-bar`} style={{ width: `${defPercentage}%` }}></div>
               </div>
               <div>
                 <p className='text-bar'>SPD: </p>
-                <div className="stat-bar spd-bar" style={{ width: `${spdPercentage}%` }}></div>
+                <div className="stat-bar" id={`${classe}-spd-bar`} style={{ width: `${spdPercentage}%` }}></div>
               </div>
               <div>
                 <p className='text-bar'>EXP: </p>
-                <div className="stat-bar exp-bar" style={{ width: `${expPercentage}%` }}></div>
+                <div className="stat-bar" id={`${classe}-exp-bar`} style={{ width: `${expPercentage}%` }}></div>
               </div>
+               </div>
              
             </div>
         </div>
