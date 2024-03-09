@@ -1,0 +1,16 @@
+.fire-card-contour-list {
+    background: linear-gradient(to bottom, #ae6046, #ec734a);
+   
+  }
+  
+  .fire-card-contour {
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #e74c3c, #f39c12);
+    height: 630px;
+    padding: 10px;    
+  }
+  
+  
+  .fire-contour-img-list {
+    background: linear-gradient(to right, #f9bea3, #ffffff, #4c2b21);
+  }

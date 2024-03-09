@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchPokemonDetail, addPokemonToPokedex} from '../pokemon/pokemonSlice';
 import { useParams } from 'react-router-dom';
 import Navbar from '../shared/Navbar';
+import  '../../css/fire.css';
 import fire from '../../assets/images/fire-type.png';
 import grass from '../../assets/images/grass-type.png';
 import colorless from '../../assets/images/colorless-type.png';
@@ -36,11 +37,12 @@ const PokemonDetail = () => {
     
 
       const pokemonTypes = selectedPokemon ? selectedPokemon.types : [];
+      console.log('pokemonTypes:', pokemonTypes)
 
       const getLogoPath = (typeObj) => {
         const typeName = typeObj.type.name;
-        console.log('Type Name:', typeName);
-        console.log('Type Object:', typeObj.type);
+        // console.log('Type Name:', typeName);
+        // console.log('Type Object:', typeObj.type);
       
         if (typeName === 'fire') {
             return fire;
@@ -69,6 +71,30 @@ const PokemonDetail = () => {
         
     
       };
+      const typeObj = selectedPokemon ? selectedPokemon.types : [];
+      console.log('mon type obj',typeObj)
+      const getStylePath = (typeObj) => {
+        if (typeObj && typeObj.length > 0) {
+          const typeName = typeObj[0].type.name; 
+          console.log('Type Name style:', typeName);
+          console.log('Type Object style:', typeObj);
+      
+          if (typeName === 'fire') {
+            import('../../css/fire.css')
+              .then(() => {
+                console.log('CSS chargé avec succès');
+                this.forceUpdate();
+              })
+              .catch((error) => console.error('Erreur lors du chargement du CSS:', error));
+            
+            return 'fire'; 
+          }
+        }
+      
+        return null;
+      };
+    
+        const classe = getStylePath(typeObj);
       
   const handleAddToPokedex = () => {
     dispatch(addPokemonToPokedex());
@@ -91,7 +117,7 @@ const PokemonDetail = () => {
         <Navbar/>
       <div className="container-card-detail">
         <div className="card-detail">
-            <div className="card-contour">
+            <div className={`${classe}-card-contour`}>
             <div className="top-card-detail">
 
                 <p className='name-detail'>{selectedPokemon.name}</p>

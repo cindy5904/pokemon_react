@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPokemons } from './pokemonSlice';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 
 const PokemonList = () => {
@@ -26,6 +27,26 @@ const PokemonList = () => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+  const getAllPokemonTypes = async () => {
+    try {
+      const response = await axios.get('https://pokeapi.co/api/v2/type');
+      return response.data.results.map((type) => type.name);
+    } catch (error) {
+      console.error('Error fetching Pokemon types:', error);
+      throw error;
+    }
+  };
+  
+  
+  getAllPokemonTypes()
+    .then((types) => {
+      console.log('All Pokemon Types:', types);
+      
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+   
     return ( 
         <>
         <div className="container-card">

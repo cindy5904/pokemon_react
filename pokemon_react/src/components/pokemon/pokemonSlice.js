@@ -59,10 +59,10 @@ const pokemonSlice = createSlice({
     },
     extraReducers: (builder) => {
       builder
-        
         .addCase(fetchPokemons.fulfilled, (state, action) => {
           state.status = 'succeeded';
           state.pokemons = action.payload;
+         
         })
         .addCase(fetchPokemonDetail.fulfilled, (state, action) => {
           const pokemonData = action.payload;
