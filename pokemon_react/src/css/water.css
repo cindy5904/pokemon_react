@@ -1,0 +1,81 @@
+.water-card-detail {
+  background-color: #c7b3a6;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 8px;
+  width: 330px;
+  height: 650px;
+  text-align: center;
+}
+
+.water-card-contour {
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #458bb9, #87ceeb);
+  height: 630px;
+  padding: 10px;
+}
+
+.water-img-detail {
+    width: 120px;
+    margin: auto;
+    padding-top: 15px;
+  }
+
+.water-img-centre {
+  border-radius: 8px;
+  width: 290px;
+  margin: auto;
+  height: 165px;
+  background: linear-gradient(to right, #ffffff, #7ed3de, #1fa1c5);
+}
+.water-name-detail {
+  text-shadow: 2px 2px 4px rgba(247, 243, 243, 0.5);
+  color: #050404 !important;
+  font-size: 16px;
+  font-family: "Pokemon";
+}
+.water-cont-img {
+  background-color: #393737;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 170px;
+  margin: auto;
+  padding-top: 5px;
+  border-radius: 8px;
+}
+
+.water-text-type {
+  font-weight: bold;
+  color: #3d0808;
+}
+
+.water-abilities {
+  border: 5px solid #a9dded;
+  background: linear-gradient(to left, #7ed3de, #0a8bae);
+  width: 150px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.water-text-abilities {
+  font-weight: bold;
+}
+
+#water-hp-bar {
+  background-color: rgb(166, 243, 166);
+}
+
+#water-atk-bar {
+  background-color: rgb(172, 136, 136);
+}
+
+#water-exp-bar {
+  background-color: #053663;
+}
+
+#water-spd-bar {
+  background-color: #a35686;
+}
+
+#water-def-bar {
+  background-color: pink;
+}

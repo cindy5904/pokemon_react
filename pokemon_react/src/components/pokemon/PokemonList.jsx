@@ -8,7 +8,7 @@ import axios from 'axios';
 const PokemonList = () => {
     const dispatch = useDispatch();
     const { pokemons, error } = useSelector((state) => state.pokemon);
-    const itemsPerPage = 12; 
+    const itemsPerPage = 100; 
     const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {

@@ -1,0 +1,81 @@
+.ground-card-detail {
+  background-color: #c7b3a6;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 8px;
+  width: 330px;
+  height: 670px;
+  text-align: center;
+}
+
+.ground-card-contour {
+  border-radius: 8px;
+  background: linear-gradient(to top, #8b5a2b, #ffcc66);
+  height: 650px;
+  padding: 10px;
+}
+
+.ground-img-detail {
+  width: 120px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.ground-img-centre {
+  border-radius: 8px;
+  width: 290px;
+  margin: auto;
+  height: 165px;
+  background: linear-gradient(to right, #ffffff, #f0c133, #8b4513);
+}
+.ground-name-detail {
+  text-shadow: 2px 2px 4px rgba(247, 243, 243, 0.5);
+  color: #050404 !important;
+  font-size: 16px;
+  font-family: "Pokemon";
+}
+.ground-cont-img {
+  background-color: #393737;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 170px;
+  margin: auto;
+  padding-top: 5px;
+  border-radius: 8px;
+}
+
+.ground-text-type {
+  font-weight: bold;
+  color: #3d0808;
+}
+
+.ground-abilities {
+  border: 5px solid rgb(231, 171, 69);
+  background: linear-gradient(to left, #f0c133, #c57e4b);
+  width: 150px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.ground-text-abilities {
+  font-weight: bold;
+}
+
+#ground-hp-bar {
+  background-color: rgb(166, 243, 166);
+}
+
+#ground-atk-bar {
+  background-color: rgb(220, 142, 8);
+}
+
+#ground-exp-bar {
+  background-color: #99bfe3;
+}
+
+#ground-spd-bar {
+  background-color: #c9b3c1;
+}
+
+#ground-def-bar {
+  background-color: pink;
+}

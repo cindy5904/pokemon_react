@@ -207,7 +207,9 @@ Link {
   height: 630px;
   padding: 10px;
 } */
-
+.type {
+  line-height: 4px;
+}
 .top-card-detail {
   display: flex;
   justify-content: space-between;
@@ -222,11 +224,10 @@ Link {
   height: 20px;
 }
 
-.type {
+.type-item {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top: 20px;
 }
 
 /* .abilities {
@@ -252,11 +253,11 @@ Link {
   background: linear-gradient(to right, #3498db, #ffffff, #2c3e50);
 
 } */
-.img-detail {
+/* .img-detail {
   width: 120px;
   margin: auto;
-  padding-top: 7px;
-}
+  padding-top: 20px;
+} */
 
 /* .name-detail {
   text-shadow: 2px 2px 4px rgba(247, 243, 243, 0.5);
@@ -281,6 +282,7 @@ Link {
 }
 .taille p, .poid p{
   margin:6px;
+  font-weight: bold;
   
 }
 .taille, .poid {
@@ -293,6 +295,10 @@ Link {
   display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
+
+}
+.gauche-info {
+  margin-top: 10px;
 }
 li {
   text-align: left;
@@ -314,25 +320,7 @@ li {
   font-weight: bold;
 }
 
-/* .hp-bar {
-  background-color: rgb(152, 216, 152);
-} 
 
-.atk-bar {
-  background-color: rgb(72, 47, 47);
-}
-
-.exp-bar {
-  background-color: #8ac6ff;
-}
-
-.spd-bar {
-  background-color: #dbbd84;
-}
-
-.def-bar {
-  background-color: pink;
-} */
 
 
 

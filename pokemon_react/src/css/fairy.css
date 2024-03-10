@@ -1,0 +1,81 @@
+.fairy-card-detail {
+  background-color: #c7b3a6;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 8px;
+  width: 330px;
+  height: 670px;
+  text-align: center;
+}
+
+.fairy-card-contour {
+  border-radius: 8px;
+  background: linear-gradient(to top, #ffb6c1, #ffe5e1);
+  height: 650px;
+  padding: 10px;
+}
+
+.fairy-img-detail {
+  width: 120px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.fairy-img-centre {
+  border-radius: 8px;
+  width: 290px;
+  margin: auto;
+  height: 165px;
+  background: linear-gradient(to right, #ffffff, #ffcc66, #ffb6c1);
+}
+.fairy-name-detail {
+  text-shadow: 2px 2px 4px rgba(247, 243, 243, 0.5);
+  color: #050404 !important;
+  font-size: 16px;
+  font-family: "Pokemon";
+}
+.fairy-cont-img {
+  background-color: #393737;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 170px;
+  margin: auto;
+  padding-top: 5px;
+  border-radius: 8px;
+}
+
+.fairy-text-type {
+  font-weight: bold;
+  color: #3d0808;
+}
+
+.fairy-abilities {
+  border: 5px solid rgb(214, 166, 193);
+  background: linear-gradient(to left,  #fce2b0, #ffb6c1);
+  width: 150px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.fairy-text-abilities {
+  font-weight: bold;
+}
+
+#fairy-hp-bar {
+  background-color: rgb(15, 236, 15);
+}
+
+#fairy-atk-bar {
+  background-color: rgb(220, 142, 8);
+}
+
+#fairy-exp-bar {
+  background-color: #3d98ee;
+}
+
+#fairy-spd-bar {
+  background-color: #ee179f;
+}
+
+#fairy-def-bar {
+  background-color: rgb(139, 43, 59);
+}

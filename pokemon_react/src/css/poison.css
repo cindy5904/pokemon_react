@@ -1,0 +1,80 @@
+.poison-card-detail {
+  background-color: #c7b3a6;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 8px;
+  width: 330px;
+  height: 670px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.poison-card-contour {
+  border-radius: 8px;
+  background: linear-gradient(to top, #803890, #4d286c);
+  height: 650px;
+  padding: 10px;
+}
+
+.poison-img-detail {
+  width: 120px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.poison-img-centre {
+  border-radius: 8px;
+  width: 290px;
+  margin: auto;
+  height: 165px;
+  background: linear-gradient(to right, #ffffff, #8553ae, #9913ab);
+}
+.poison-name-detail {
+  text-shadow: 2px 2px 4px rgba(62, 60, 60, 0.5);
+  font-size: 16px;
+  font-family: "Pokemon";
+}
+.poison-cont-img {
+  background-color: #393737;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 170px;
+  margin: auto;
+  padding-top: 5px;
+  border-radius: 8px;
+}
+
+.poison-text-type {
+  font-weight: bold;
+}
+
+.poison-abilities {
+  border: 5px solid #e1b96d;
+  background: linear-gradient(to left, #8553ae, #9913ab);
+  width: 150px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.poison-text-abilities {
+  font-weight: bold;
+}
+
+#poison-hp-bar {
+  background-color: rgb(166, 243, 166);
+}
+
+#poison-atk-bar {
+  background-color: rgb(172, 136, 136);
+}
+
+#poison-exp-bar {
+  background-color: #3887d1;
+}
+
+#poison-spd-bar {
+  background-color: #b0a3df;
+}
+
+#poison-def-bar {
+  background-color: pink;
+}
