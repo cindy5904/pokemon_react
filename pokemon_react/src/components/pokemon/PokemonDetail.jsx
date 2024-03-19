@@ -6,15 +6,7 @@ import {
 } from "../pokemon/pokemonSlice";
 import { useParams } from "react-router-dom";
 import Navbar from "../shared/Navbar";
-import "../../css/fire.css";
-import "../../css/grass.css";
-import "../../css/water.css";
-import "../../css/bug.css";
-import "../../css/fliying.css";
-import "../../css/poison.css";
-import "../../css/electric.css";
-import "../../css/ground.css";
-import "../../css/fairy.css";
+import "../../css/typeClass.css";
 import fire from "../../assets/images/fire-type.png";
 import grass from "../../assets/images/grass-type.png";
 import colorless from "../../assets/images/colorless-type.png";
@@ -117,7 +109,7 @@ const PokemonDetail = () => {
       console.log("Type Object style:", typeObj);
 
       if (typeName === "fire") {
-        import("../../css/fire.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log('CSS "fire" chargé avec succès');
           })
@@ -127,7 +119,7 @@ const PokemonDetail = () => {
 
         return "fire";
       } else if (typeName === "grass") {
-        import("../../css/grass.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log('CSS "grass" chargé avec succès');
           })
@@ -137,7 +129,7 @@ const PokemonDetail = () => {
 
         return "grass";
       } else if (typeName === "water") {
-        import("../../css/water.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
@@ -147,7 +139,7 @@ const PokemonDetail = () => {
 
         return "water";
       } else if (typeName === "bug") {
-        import("../../css/bug.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
@@ -157,7 +149,7 @@ const PokemonDetail = () => {
 
         return "bug";
       } else if (typeName === "flying") {
-        import("../../css/fliying.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
@@ -167,7 +159,7 @@ const PokemonDetail = () => {
 
         return "flying";
       } else if (typeName === "normal") {
-        import("../../css/fliying.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
@@ -175,9 +167,9 @@ const PokemonDetail = () => {
             console.error("Erreur lors du chargement du CSS :", error)
           );
 
-        return "flying";
+        return "normal";
       } else if (typeName === "poison") {
-        import("../../css/poison.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
@@ -187,7 +179,7 @@ const PokemonDetail = () => {
 
         return "poison";
       } else if (typeName === "electric") {
-        import("../../css/electric.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
@@ -197,25 +189,103 @@ const PokemonDetail = () => {
 
         return "electric";
       } else if (typeName === "ground") {
-        import("../../css/ground.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
           .catch((error) =>
             console.error("Erreur lors du chargement du CSS :", error)
           );
-
         return "ground";
+
       } else if (typeName === "fairy") {
-        import("../../css/fairy.css")
+        import ("../../css/typeClass.css")
           .then(() => {
             console.log("CSS  chargé avec succès");
           })
           .catch((error) =>
             console.error("Erreur lors du chargement du CSS :", error)
           );
-
         return "fairy";
+
+      }  else if (typeName === "fighting") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "fighting";
+
+      } else if (typeName === "psychic") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "psychic";
+
+      } else if (typeName === "rock") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "rock";
+        
+      } else if (typeName === "ghost") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "ghost";
+        
+      } else if (typeName === "ice") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "ice";
+        
+      } else if (typeName === "dragon") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "dragon";
+        
+      }  else if (typeName === "dark") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "dark";
+      }   else if (typeName === "steel") {
+        import ("../../css/typeClass.css")
+          .then(() => {
+            console.log("CSS  chargé avec succès");
+          })
+          .catch((error) =>
+            console.error("Erreur lors du chargement du CSS :", error)
+          );
+        return "steel";
       }
       return null;
     }
@@ -264,7 +334,7 @@ const PokemonDetail = () => {
             <div className={`${classe}-cont-img`}>
               <div className={`${classe}-img-centre`}>
                 <img
-                  className={`${classe}-img-detail`}
+                  className="img-detail"
                   src={
                     selectedPokemon.sprites?.other?.dream_world?.front_default
                   }

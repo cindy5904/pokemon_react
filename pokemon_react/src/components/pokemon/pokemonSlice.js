@@ -53,7 +53,11 @@ const pokemonSlice = createSlice({
         state.selectedPokemon = action.payload;
       },
       addPokemonToPokedex: (state, action) => {
-        state.pokedex.push(action.payload);
+        state.pokedex.push({
+          id: action.payload.id,
+          name: action.payload.name,
+          sprites: action.payload.sprites || {},
+        });
         state.pokedexCount += 1;
       },
     },

@@ -8,7 +8,7 @@ import axios from 'axios';
 const PokemonList = () => {
     const dispatch = useDispatch();
     const { pokemons, error } = useSelector((state) => state.pokemon);
-    const itemsPerPage = 100; 
+    const itemsPerPage = 300; 
     const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
@@ -27,6 +27,8 @@ const PokemonList = () => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+
+  
   const getAllPokemonTypes = async () => {
     try {
       const response = await axios.get('https://pokeapi.co/api/v2/type');
